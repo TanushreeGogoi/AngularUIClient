@@ -4,13 +4,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { StudentComponent } from './student/student.component';
+import { HttpclientdataComponent } from './httpclientdata/httpclientdata.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ItemListComponent } from './item-list/item-list.component';
+import { HomeComponent } from './home/home.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StudentComponent,
+    HttpclientdataComponent,
+    ItemListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Employee Data from Json File Using Http Client</h1>
+    
+    <table class="table table-bordered table-striped">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Fisrt Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let emp of employeeData">
+          <td>{{ emp.id }}</td>
+          <td>{{ emp.first_name }}</td>
+          <td>{{ emp.last_name }}</td>
+          <td>{{ emp.email }}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>

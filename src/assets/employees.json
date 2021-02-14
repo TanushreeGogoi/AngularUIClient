@@ -1,0 +1,33 @@
+
+  [
+    {
+      "id": 1,
+      "first_name": "Sebastian",
+      "last_name": "Eschweiler",
+      "email": "sebastian@codingthesmartway.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Steve",
+      "last_name": "Palmer",
+      "email": "steve@codingthesmartway.com"
+    },
+    {
+      "id": "4",
+      "first_name": "Tanushree",
+      "last_name": "Gogoi",
+      "email": "tanushree@go.com"
+    },
+    {
+      "id": "7",
+      "first_name": "Sachin",
+      "last_name": "Tendular",
+      "email": "sachin@go.com"
+    },
+    {
+      "id": "5",
+      "first_name": "Ajay",
+      "last_name": "Mehta",
+      "email": "ajay@go.com"
+    }
+  ]

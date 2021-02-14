@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>Items Data in Inventory</h1>
+    
+    <table class="table table-bordered table-striped">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>description</th>
+            <th>quantity</th>
+            <th>price</th>
+            <th>brand</th>
+            <th>size</th>
+            <th>color</th>
+            <th>countryOfOrigin</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.description }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>{{ item.price }}</td>
+          <td>{{ item.brand }}</td>
+          <td>{{ item.size }}</td>
+          <td>{{ item.color }}</td>
+          <td>{{ item.countryOfOrigin }}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
