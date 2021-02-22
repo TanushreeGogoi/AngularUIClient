@@ -9,6 +9,9 @@ import { HttpclientdataComponent } from './httpclientdata/httpclientdata.compone
 import { HttpClientModule } from '@angular/common/http';
 import { ItemListComponent } from './item-list/item-list.component';
 import { HomeComponent } from './home/home.component';
+import { ObservableComponent } from './observable/observable.component';
+import { CorsComponent } from './cors/cors.component';
+import { PromiseObservableComponent } from './promise-observable/promise-observable.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { HomeComponent } from './home/home.component';
     StudentComponent,
     HttpclientdataComponent,
     ItemListComponent,
-    HomeComponent
+    HomeComponent,
+    ObservableComponent,
+    CorsComponent,
+    PromiseObservableComponent
   ],
   imports: [
     BrowserModule,

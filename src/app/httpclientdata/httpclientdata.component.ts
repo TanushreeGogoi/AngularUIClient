@@ -1,12 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
-interface Employee {
-  id: Number;
-  first_name: String;
-  last_name: String;
-  email: String;
-}
+import { EmployeeService } from '../service/employee.service';
 
 @Component({
   selector: 'app-httpclientdata',
@@ -15,18 +8,14 @@ interface Employee {
 })
 export class HttpclientdataComponent implements OnInit {
 
-  employeeData: Employee[];
+  employeeData = [];
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private employeeService: EmployeeService) {
    }
 
   ngOnInit() {
-   this.getEmployees();
+   this.employeeService.getEmployees()
+       .subscribe(data => this.employeeData=data);
   }
 
-  getEmployees(){
-    this.httpClient.get("/assets/employees.json").subscribe((data: Employee[]) => {
-      this.employeeData = data;
-    })
-  }
 }
